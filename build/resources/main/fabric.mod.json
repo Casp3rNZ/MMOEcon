@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "serversideecon",
+  "version": "1.0-SNAPSHOT",
+  "name": "serversideecon",
+  "description": "A server side Economy, Chestshop and Auction House mod for Fabric!",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/serversideecon/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "me.casp3rnz.serversideecon.serverside"
+    ]
+  },
+  "mixins": [
+    "serversideecon.mixins.json",
+    {
+      "config": "serversideecon.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "fabric": "*",
+    "minecraft": "1.20.1"
+  }
+}

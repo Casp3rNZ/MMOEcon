@@ -1,0 +1,148 @@
+{
+  "categories": [
+    {
+      "name": "Rare Minerals",
+      "representativeItem": "minecraft:diamond",
+      "items": [
+        {
+          "id": "minecraft:diamond",
+          "displayName": "Diamond",
+          "buyPrice": 1000,
+          "sellPrice": 500
+        },
+        {
+          "id": "minecraft:emerald",
+          "displayName": "Emerald",
+          "buyPrice": 800,
+          "sellPrice": 400
+        },
+        {
+          "id": "minecraft:gold_ingot",
+          "displayName": "Gold Ingot",
+          "buyPrice": 500,
+          "sellPrice": 250
+        },
+        {
+          "id": "minecraft:iron_ingot",
+          "displayName": "Iron Ingot",
+          "buyPrice": 200,
+          "sellPrice": 100
+        }
+      ]
+    },
+    {
+      "name": "Farmables",
+      "representativeItem": "minecraft:wheat",
+      "items": [
+        {
+          "id": "minecraft:wheat",
+          "displayName": "Wheat",
+          "buyPrice": 50,
+          "sellPrice": 25
+        },
+        {
+          "id": "minecraft:carrot",
+          "displayName": "Carrot",
+          "buyPrice": 30,
+          "sellPrice": 15
+        },
+        {
+          "id": "minecraft:potato",
+          "displayName": "Potato",
+          "buyPrice": 30,
+          "sellPrice": 15
+        },
+        {
+          "id": "minecraft:beetroot",
+          "displayName": "Beetroot",
+          "buyPrice": 40,
+          "sellPrice": 20
+        },
+        {
+          "id": "minecraft:rotten_flesh",
+          "displayName": "Rotten Flesh",
+          "buyPrice": 10,
+          "sellPrice": 5
+        },
+        {
+          "id": "minecraft:bone",
+          "displayName": "Bone",
+          "buyPrice": 20,
+          "sellPrice": 7
+        },
+        {
+          "id": "minecraft:string",
+          "displayName": "String",
+          "buyPrice": 15,
+          "sellPrice": 8
+        },
+        {
+          "id": "minecraft:spider_eye",
+          "displayName": "Spider Eye",
+          "buyPrice": 25,
+          "sellPrice": 12
+        },
+        {
+          "id": "minecraft:ender_pearl",
+          "displayName": "Ender Pearl",
+          "buyPrice": 80,
+          "sellPrice": 2
+        }
+      ]
+    },
+    {
+      "name": "Building Blocks",
+      "representativeItem": "minecraft:grass_block",
+      "items": [
+        {
+          "id": "minecraft:stone",
+          "displayName": "Stone",
+          "buyPrice": 10,
+          "sellPrice": 5
+        },
+        {
+          "id": "minecraft:cobblestone",
+          "displayName": "Cobblestone",
+          "buyPrice": 5,
+          "sellPrice": 2
+        },
+        {
+          "id": "minecraft:oak_planks",
+          "displayName": "Oak Planks",
+          "buyPrice": 15,
+          "sellPrice": 7
+        },
+        {
+          "id": "minecraft:brick",
+          "displayName": "Brick",
+          "buyPrice": 20,
+          "sellPrice": 10
+        }
+      ]
+    },
+    {
+      "name": "Tools",
+      "representativeItem": "minecraft:diamond_pickaxe",
+      "items": [
+        {
+          "id": "minecraft:diamond_pickaxe",
+          "displayName": "Diamond Pickaxe",
+          "buyPrice": 1500,
+          "sellPrice": 750
+        }
+      ]
+    },
+    {
+      "name": "Armor",
+      "representativeItem": "minecraft:diamond_chestplate",
+      "items": [
+        {
+          "id": "minecraft:diamond_chestplate",
+          "displayName": "Diamond Chestplate",
+          "buyPrice": 2000,
+          "sellPrice": 1000
+        }
+      ]
+    }
+  ]
+}
