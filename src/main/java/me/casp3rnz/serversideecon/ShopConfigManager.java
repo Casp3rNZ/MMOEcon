@@ -34,37 +34,39 @@ public class ShopConfigManager {
                 for (int j = 0; j < itemsJson.size(); j++) {
                     JsonObject itemJson = itemsJson.get(j).getAsJsonObject();
                     String id = itemJson.get("id").getAsString();
-                    String displayName = itemJson.get("displayName").getAsString();
-                    int buyPrice = itemJson.get("buyPrice").getAsInt();
-                    int sellPrice = itemJson.get("sellPrice").getAsInt();
-                    items.add(new ShopItem(id, displayName, buyPrice, sellPrice));
+                    Float buyPrice = itemJson.has("buyPrice") ? itemJson.get("buyPrice").getAsFloat() : null;
+                    Float sellPrice = itemJson.has("sellPrice") ? itemJson.get("sellPrice").getAsFloat() : null;
+                    items.add(new ShopItem(id, buyPrice, sellPrice));
                 }
 
                 categories.add(new Category(categoryName, representativeItem, items));
-                //print success
                 System.out.println("Loaded category: " + categoryName);
             }
         } catch (IOException | JsonParseException e) {
             System.out.println("No Config present");
-            // If there's an issue loading the config, log it but continue with default values
         }
     }
 
-    // reload config
     public static void reloadConfig() {
         categories.clear();
         init();
     }
 
+    public static List<ShopItem> getAllShopItems() {
+        List<ShopItem> allItems = new ArrayList<>();
+        for (Category category : categories) {
+            allItems.addAll(category.items);
+        }
+        return allItems;
+    }
+
     public static class ShopItem {
         public String id;
-        public String displayName;
-        public int buyPrice;
-        public int sellPrice;
+        public Float buyPrice;
+        public Float sellPrice;
 
-        public ShopItem(String id, String displayName, int buyPrice, int sellPrice) {
+        public ShopItem(String id, Float buyPrice, Float sellPrice) {
             this.id = id;
-            this.displayName = displayName;
             this.buyPrice = buyPrice;
             this.sellPrice = sellPrice;
         }

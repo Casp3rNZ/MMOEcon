@@ -2,46 +2,47 @@ package me.casp3rnz.serversideecon;
 
 import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.math.MathHelper;
 
 import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.UUID;
 
 public class PlayerBalanceManager {
-    static final File BALANCE_FILE = new File("economy_balances.dat");
-    final Map<String, Float> balances = new HashMap<>();
+    static final File BALANCE_FILE = new File("MMOEconomy_balances.dat");
+    static final Map<UUID, Float> balances = new HashMap<>();
 
     public void init() {
-        // initialize balances from file
+        // Initialize balances from file
         if (BALANCE_FILE.exists()) {
             try (DataInputStream in = new DataInputStream(new FileInputStream(BALANCE_FILE))) {
                 int count = in.readInt();
                 for (int i = 0; i < count; i++) {
-                    balances.put(in.readUTF(), in.readFloat());
+                    UUID uuid = UUID.fromString(in.readUTF());
+                    float balance = in.readFloat();
+                    balances.put(uuid, balance);
                 }
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
-    }
-
-    // Initialize a player's balance with a default value on player join
-    public void initializePlayer(PlayerEntity player) {
-        ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> {
+        ServerPlayConnectionEvents.JOIN.register((handler, sender, server1) -> {
             PlayerEntity joinedPlayer = handler.getPlayer();
-            if (!balances.containsKey(joinedPlayer.getUuid().toString())) {
-                balances.put(joinedPlayer.getUuid().toString(), 500f); // Start with $500
+            UUID playerUUID = joinedPlayer.getUuid();
+            if (!balances.containsKey(playerUUID)) {
+                balances.put(playerUUID, 500f); // Start with $500
             }
             saveBalances();
         });
     }
 
-    public void saveBalances() {
+    public static void saveBalances() {
         try (DataOutputStream out = new DataOutputStream(new FileOutputStream(BALANCE_FILE))) {
             out.writeInt(balances.size());
-            for (Map.Entry<String, Float> entry : balances.entrySet()) {
-                out.writeUTF(entry.getKey());
+            for (Map.Entry<UUID, Float> entry : balances.entrySet()) {
+                out.writeUTF(entry.getKey().toString());
                 out.writeFloat(entry.getValue());
             }
         } catch (IOException e) {
@@ -49,26 +50,26 @@ public class PlayerBalanceManager {
         }
     }
 
-    public float getBalance(String player) {
-        return balances.getOrDefault(player, 500f);  // Default balance is 500
+    public static float getBalance(UUID playerUUID) {
+        return balances.getOrDefault(playerUUID, 500f);  // Default balance is 500
     }
 
-    public void setBalance(String player, float amount) {
-        balances.put(player, amount);
+    public static void setBalance(UUID playerUUID, float amount) {
+        balances.put(playerUUID, amount);
         saveBalances();
     }
 
-    public void addBalance(String player, float amount) {
-        balances.put(player, getBalance(player) + amount);
+    public static void addBalance(UUID playerUUID, float amount) {
+        balances.put(playerUUID, getBalance(playerUUID) + amount);
         saveBalances();
     }
 
-    public void subtractBalance(String player, float amount) {
-        balances.put(player, MathHelper.clamp(getBalance(player) - amount, 0, Float.MAX_VALUE));
+    public static void subtractBalance(UUID playerUUID, float amount) {
+        balances.put(playerUUID, MathHelper.clamp(getBalance(playerUUID) - amount, 0, Float.MAX_VALUE));
         saveBalances();
     }
 
-    public Map<String, Float> getBalances() {
+    public static Map<UUID, Float> getBalances() {
         return balances;
     }
 }

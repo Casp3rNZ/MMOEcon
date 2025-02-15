@@ -1,146 +1,1546 @@
 {
   "categories": [
     {
-      "name": "Rare Minerals",
-      "representativeItem": "minecraft:diamond",
-      "items": [
-        {
-          "id": "minecraft:diamond",
-          "displayName": "Diamond",
-          "buyPrice": 1000,
-          "sellPrice": 500
-        },
-        {
-          "id": "minecraft:emerald",
-          "displayName": "Emerald",
-          "buyPrice": 800,
-          "sellPrice": 400
-        },
-        {
-          "id": "minecraft:gold_ingot",
-          "displayName": "Gold Ingot",
-          "buyPrice": 500,
-          "sellPrice": 250
-        },
-        {
-          "id": "minecraft:iron_ingot",
-          "displayName": "Iron Ingot",
-          "buyPrice": 200,
-          "sellPrice": 100
-        }
-      ]
-    },
-    {
-      "name": "Farmables",
-      "representativeItem": "minecraft:wheat",
-      "items": [
-        {
-          "id": "minecraft:wheat",
-          "displayName": "Wheat",
-          "buyPrice": 50,
-          "sellPrice": 25
-        },
-        {
-          "id": "minecraft:carrot",
-          "displayName": "Carrot",
-          "buyPrice": 30,
-          "sellPrice": 15
-        },
-        {
-          "id": "minecraft:potato",
-          "displayName": "Potato",
-          "buyPrice": 30,
-          "sellPrice": 15
-        },
-        {
-          "id": "minecraft:beetroot",
-          "displayName": "Beetroot",
-          "buyPrice": 40,
-          "sellPrice": 20
-        },
-        {
-          "id": "minecraft:rotten_flesh",
-          "displayName": "Rotten Flesh",
-          "buyPrice": 10,
-          "sellPrice": 5
-        },
-        {
-          "id": "minecraft:bone",
-          "displayName": "Bone",
-          "buyPrice": 20,
-          "sellPrice": 7
-        },
-        {
-          "id": "minecraft:string",
-          "displayName": "String",
-          "buyPrice": 15,
-          "sellPrice": 8
-        },
-        {
-          "id": "minecraft:spider_eye",
-          "displayName": "Spider Eye",
-          "buyPrice": 25,
-          "sellPrice": 12
-        },
-        {
-          "id": "minecraft:ender_pearl",
-          "displayName": "Ender Pearl",
-          "buyPrice": 80,
-          "sellPrice": 2
-        }
-      ]
-    },
-    {
       "name": "Building Blocks",
       "representativeItem": "minecraft:grass_block",
       "items": [
         {
           "id": "minecraft:stone",
-          "displayName": "Stone",
-          "buyPrice": 10,
-          "sellPrice": 5
+          "buyPrice": 5
         },
         {
           "id": "minecraft:cobblestone",
-          "displayName": "Cobblestone",
-          "buyPrice": 5,
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:stone_bricks",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:andesite",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:diorite",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:granite",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:gravel",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:sand",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:sandstone",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:bricks",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:packed_mud",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:glowstone",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:bookshelf",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:obsidian",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:prismarine",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:purpur_block",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:quartz_block",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:nether_bricks",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:netherrack",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:soul_sand",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:glass",
+          "buyPrice": 5
+        },
+        {
+          "id": "create:framed_glass",
+          "buyPrice": 5
+        },
+        {
+          "id": "ae2:quartz_glass",
+          "buyPrice": 25
+        },
+        {
+          "id": "minecraft:oak_log",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:spruce_log",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:birch_log",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:jungle_log",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:acacia_log",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:dark_oak_log",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:crimson_stem",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:warped_stem",
+          "buyPrice": 5
+        },
+        {
+          "id": "betterarcheology:rotten_log",
+          "buyPrice": 5
+        },
+        {
+          "id": "promenade:sakura_log",
+          "buyPrice": 5
+        },
+        {
+          "id": "betternether:willow_log",
+          "buyPrice": 5
+        },
+        {
+          "id": "promenade:maple_log",
+          "buyPrice": 5
+        },
+        {
+          "id": "promenade:palm_log",
+          "buyPrice": 5
+        },
+        {
+          "id": "beachparty:palm_log",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:mangrove_log",
+          "buyPrice": 5
+        },
+        {
+          "id": "techreborn:rubber_log",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:cherry_log",
+          "buyPrice": 5
+        },
+        {
+          "id": "promenade:maple_log",
+          "buyPrice": 5
+        },
+        {
+          "id": "bewitchment:juniper_log",
+          "buyPrice": 5
+        },
+        {
+          "id": "bewitchment:cypress_log",
+          "buyPrice": 5
+        },
+        {
+          "id": "bewitchment:elder_log",
+          "buyPrice": 5
+        },
+        {
+          "id": "bewitchment:dragons_blood_log",
+          "buyPrice": 5
+        },
+        {
+          "id": "botania:livingwood_log",
+          "buyPrice": 5
+        },
+        {
+          "id": "botania:glimmering_livingwood_log",
+          "buyPrice": 5
+        },
+        {
+          "id": "botania:dreamwood_log",
+          "buyPrice": 5
+        },
+        {
+          "id": "botania:glimmering_dreamwood_log",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:white_wool",
+          "buyPrice": 10
+        },
+        {
+          "id": "minecraft:light_gray_wool",
+          "buyPrice": 10
+        },
+        {
+          "id": "minecraft:gray_wool",
+          "buyPrice": 5
+        },
+        {
+          "id": "minecraft:black_wool",
+          "buyPrice": 10
+        },
+        {
+          "id": "minecraft:brown_wool",
+          "buyPrice": 10
+        },
+        {
+          "id": "minecraft:red_wool",
+          "buyPrice": 10
+        },
+        {
+          "id": "minecraft:orange_wool",
+          "buyPrice": 10
+        },
+        {
+          "id": "minecraft:yellow_wool",
+          "buyPrice": 10
+        },
+        {
+          "id": "minecraft:lime_wool",
+          "buyPrice": 10
+        },
+        {
+          "id": "minecraft:green_wool",
+          "buyPrice": 10
+        },
+        {
+          "id": "minecraft:cyan_wool",
+          "buyPrice": 10
+        },
+        {
+          "id": "minecraft:light_blue_wool",
+          "buyPrice": 10
+        },
+        {
+          "id": "minecraft:blue_wool",
+          "buyPrice": 10
+        },
+        {
+          "id": "minecraft:purple_wool",
+          "buyPrice": 10
+        },
+        {
+          "id": "minecraft:magenta_wool",
+          "buyPrice": 10
+        },
+        {
+          "id": "minecraft:pink_wool",
+          "buyPrice": 10
+        },
+
+
+        {
+          "id": "minecraft:white_concrete",
+          "buyPrice": 20
+        },
+        {
+          "id": "minecraft:light_gray_concrete",
+          "buyPrice": 20
+        },
+        {
+          "id": "minecraft:gray_concrete",
+          "buyPrice": 20
+        },
+        {
+          "id": "minecraft:black_concrete",
+          "buyPrice": 20
+        },
+        {
+          "id": "minecraft:brown_concrete",
+          "buyPrice": 20
+        },
+        {
+          "id": "minecraft:red_concrete",
+          "buyPrice": 20
+        },
+        {
+          "id": "minecraft:orange_concrete",
+          "buyPrice": 20
+        },
+        {
+          "id": "minecraft:yellow_concrete",
+          "buyPrice": 20
+        },
+        {
+          "id": "minecraft:lime_concrete",
+          "buyPrice": 20
+        },
+        {
+          "id": "minecraft:green_concrete",
+          "buyPrice": 20
+        },
+        {
+          "id": "minecraft:cyan_concrete",
+          "buyPrice": 20
+        },
+        {
+          "id": "minecraft:light_blue_concrete",
+          "buyPrice": 20
+        },
+        {
+          "id": "minecraft:brown_concrete",
+          "buyPrice": 20
+        },
+        {
+          "id": "minecraft:purple_concrete",
+          "buyPrice": 20
+        },
+        {
+          "id": "minecraft:magenta_concrete",
+          "buyPrice": 20
+        },
+        {
+          "id": "minecraft:pink_concrete",
+          "buyPrice": 20
+        }
+      ]
+    },
+    {
+      "name": "Ores & Minerals",
+      "representativeItem": "minecraft:diamond",
+      "items": [
+        {
+          "id": "minecraft:diamond",
+          "buyPrice": 200,
+          "sellPrice": 6.5
+        },
+        {
+          "id": "minecraft:emerald",
+          "buyPrice": 250,
+          "sellPrice": 7.5
+        },
+        {
+          "id": "minecraft:gold_ingot",
+          "buyPrice": 50,
+          "sellPrice": 5
+        },
+        {
+          "id": "minecraft:iron_ingot",
+          "buyPrice": 20,
+          "sellPrice": 1.5
+        },
+        {
+          "id": "minecraft:copper_ingot",
+          "buyPrice": 15,
+          "sellPrice": 1
+        },
+        {
+          "id": "minecraft:coal",
+          "buyPrice": 10,
+          "sellPrice": 1
+        },
+        {
+          "id": "modern_industrialization:lignite_coal",
+          "buyPrice": 10,
+          "sellPrice": 1
+        },
+        {
+          "id": "techreborn:tin_ingot",
+          "buyPrice": 20,
+          "sellPrice": 1.5
+        },
+        {
+          "id": "techreborn:lead_ingot",
+          "buyPrice": 30,
           "sellPrice": 2
         },
         {
-          "id": "minecraft:oak_planks",
-          "displayName": "Oak Planks",
-          "buyPrice": 15,
-          "sellPrice": 7
+          "id": "techreborn:nickel_ingot",
+          "buyPrice": 30,
+          "sellPrice": 2
+        }
+      ]
+    },
+    {
+      "name": "Mob Drops",
+      "representativeItem": "minecraft:rotten_flesh",
+      "items": [
+        {
+          "id": "minecraft:rotten_flesh",
+          "buyPrice": 2,
+          "sellPrice": 0.5
         },
         {
-          "id": "minecraft:brick",
-          "displayName": "Brick",
+          "id": "minecraft:bone",
+          "buyPrice": 5,
+          "sellPrice": 1.5
+        },
+        {
+          "id": "minecraft:string",
+          "buyPrice": 5,
+          "sellPrice": 1.5
+        },
+        {
+          "id": "minecraft:spider_eye",
+          "buyPrice": 8,
+          "sellPrice": 2.5
+        },
+        {
+          "id": "minecraft:ender_pearl",
+          "buyPrice": 10,
+          "sellPrice": 0.5
+        },
+        {
+          "id": "minecraft:ghast_tear",
+          "buyPrice": 50,
+          "sellPrice": 5
+        },
+        {
+          "id": "minecraft:blaze_rod",
           "buyPrice": 20,
+          "sellPrice": 2
+        },
+        {
+          "id": "minecraft:gunpowder",
+          "buyPrice": 10,
+          "sellPrice": 1.5
+        },
+        {
+          "id": "minecraft:slime_ball",
+          "buyPrice": 50,
+          "sellPrice": 5
+        },
+        {
+          "id": "minecraft:leather",
+          "buyPrice": 10,
+          "sellPrice": 1.5
+        },
+        {
+          "id": "minecraft:rabbit_hide",
+          "buyPrice": 10,
+          "sellPrice": 1.5
+        },
+        {
+          "id": "mcda:ocelot_pelt_black",
+          "buyPrice": 50,
+          "sellPrice": 5
+        }
+      ]
+    },
+    {
+      "name": "Crops",
+      "representativeItem": "minecraft:wheat",
+      "items": [
+        {
+          "id": "minecraft:wheat",
+          "buyPrice": 3,
+          "sellPrice": 0.5
+        },
+        {
+          "id": "minecraft:carrot",
+          "buyPrice": 3,
+          "sellPrice": 0.5
+        },
+        {
+          "id": "minecraft:potato",
+          "buyPrice": 3,
+          "sellPrice": 0.5
+        },
+        {
+          "id": "minecraft:beetroot",
+          "buyPrice": 3,
+          "sellPrice": 0.5
+        },
+        {
+          "id": "minecraft:melon_slice",
+          "buyPrice": 3,
+          "sellPrice": 0.5
+        },
+        {
+          "id": "minecraft:sugar_cane",
+          "buyPrice": 4,
+          "sellPrice": 1
+        },
+        {
+          "id": "minecraft:pumpkin",
+          "buyPrice": 5,
+          "sellPrice": 1.5
+        },
+        {
+          "id": "minecraft:cactus",
+          "buyPrice": 5,
+          "sellPrice": 1.5
+        }
+      ]
+    },
+    {
+      "name": "Vanilla Food",
+      "representativeItem": "minecraft:cooked_beef",
+      "items": [
+        {
+          "id": "minecraft:cooked_beef",
+          "buyPrice": 10,
+          "sellPrice": 2
+        },
+        {
+          "id": "minecraft:cooked_porkchop",
+          "buyPrice": 10,
+          "sellPrice": 2
+        },
+        {
+          "id": "minecraft:cooked_chicken",
+          "buyPrice": 10,
+          "sellPrice": 2
+        },
+        {
+          "id": "minecraft:cooked_mutton",
+          "buyPrice": 10,
+          "sellPrice": 2
+        },
+        {
+          "id": "minecraft:cooked_rabbit",
+          "buyPrice": 10,
+          "sellPrice": 2
+        },
+        {
+          "id": "minecraft:cooked_cod",
+          "buyPrice": 10,
+          "sellPrice": 2
+        },
+        {
+          "id": "minecraft:cooked_salmon",
+          "buyPrice": 10,
+          "sellPrice": 2
+        },
+        {
+          "id": "minecraft:bread",
+          "buyPrice": 5,
+          "sellPrice": 1
+        },
+        {
+          "id": "minecraft:golden_apple",
+          "buyPrice": 100,
+          "sellPrice": 10
+        },
+        {
+          "id": "minecraft:enchanted_golden_apple",
+          "buyPrice": 1000,
+          "sellPrice": 100
+        }
+      ]
+    },
+    {
+      "name": "Farmer's Delight",
+      "representativeItem": "farmersdelight:tomato",
+      "items": [
+        {
+          "id": "farmersdelight:milk_bottle",
+          "buyPrice": 5,
+          "sellPrice": 0.5
+        },
+        {
+          "id": "farmersdelight:hot_cocoa",
+          "buyPrice": 10,
+          "sellPrice": 2
+        },
+        {
+          "id": "farmersdelight:apple_cider",
+          "buyPrice": 10,
+          "sellPrice": 2
+        },
+        {
+          "id": "farmersdelight:melon_juice",
+          "buyPrice": 10,
+          "sellPrice": 2
+        },
+        {
+          "id": "farmersdelight:apple_pie",
+          "buyPrice": 20,
+          "sellPrice": 2
+        },
+        {
+          "id": "farmersdelight:sweet_berry_cheesecake",
+          "buyPrice": 20,
+          "sellPrice": 2
+        },
+        {
+          "id": "farmersdelight:chocolate_pie",
+          "buyPrice": 20,
+          "sellPrice": 2
+        },
+        {
+          "id": "farmersdelight:apple_pie",
+          "buyPrice": 20,
+          "sellPrice": 2
+        },
+        {
+          "id": "farmersdelight:sweet_berry_cookie",
+          "buyPrice": 10,
+          "sellPrice": 1
+        },
+        {
+          "id": "farmersdelight:honey_cookie",
+          "buyPrice": 10,
+          "sellPrice": 1
+        },
+        {
+          "id": "farmersdelight:melon_popsicle",
+          "buyPrice": 20,
+          "sellPrice": 2
+        },
+        {
+          "id": "farmersdelight:glow_berry_custard",
+          "buyPrice": 25,
+          "sellPrice": 2.5
+        },
+        {
+          "id": "farmersdelight:fruit_salad",
+          "buyPrice": 50,
+          "sellPrice": 5
+        },
+        {
+          "id": "farmersdelight:mixed_salad",
+          "buyPrice": 50,
+          "sellPrice": 5
+        },
+        {
+          "id": "farmersdelight:nether_salad",
+          "buyPrice": 35,
+          "sellPrice": 3.5
+        },
+        {
+          "id": "farmersdelight:barbecue_stick",
+          "buyPrice": 60,
+          "sellPrice": 6
+        },
+        {
+          "id": "farmersdelight:egg_sandwich",
+          "buyPrice": 60,
+          "sellPrice": 6
+        },
+        {
+          "id": "farmersdelight:chicken_sandwich",
+          "buyPrice": 60,
+          "sellPrice": 6
+        },
+        {
+          "id": "farmersdelight:bacon_sandwich",
+          "buyPrice": 60,
+          "sellPrice": 6
+        },
+        {
+          "id": "farmersdelight:hamburger",
+          "buyPrice": 60,
+          "sellPrice": 6
+        },
+        {
+          "id": "farmersdelight:mutton_wrap",
+          "buyPrice": 60,
+          "sellPrice": 6
+        },
+        {
+          "id": "farmersdelight:dumplings",
+          "buyPrice": 80,
+          "sellPrice": 7.5
+        },
+        {
+          "id": "farmersdelight:stuffed_potato",
+          "buyPrice": 50,
+          "sellPrice": 5
+        },
+        {
+          "id": "farmersdelight:cabbage_rolls",
+          "buyPrice": 25,
+          "sellPrice": 2.5
+        },
+        {
+          "id": "farmersdelight:salmon_roll",
+          "buyPrice": 50,
+          "sellPrice": 5
+        },
+        {
+          "id": "farmersdelight:cod_roll",
+          "buyPrice": 50,
+          "sellPrice": 5
+        },
+        {
+          "id": "farmersdelight:kelp_roll",
+          "buyPrice": 35,
+          "sellPrice": 3.5
+        },
+        {
+          "id": "farmersdelight:kelp_roll_slice",
+          "buyPrice": 12,
+          "sellPrice": 1
+        },
+        {
+          "id": "farmersdelight:bone_broth",
+          "buyPrice": 35,
+          "sellPrice": 3.5
+        },
+        {
+          "id": "farmersdelight:beef_stew",
+          "buyPrice": 50,
+          "sellPrice": 5
+        },
+        {
+          "id": "farmersdelight:chicken_soup",
+          "buyPrice": 50,
+          "sellPrice": 5
+        },
+        {
+          "id": "farmersdelight:vegetable_soup",
+          "buyPrice": 50,
+          "sellPrice": 5
+        },
+        {
+          "id": "farmersdelight:fish_stew",
+          "buyPrice": 50,
+          "sellPrice": 5
+        },
+        {
+          "id": "farmersdelight:fried_rice",
+          "buyPrice": 50,
+          "sellPrice": 5
+        },
+        {
+          "id": "farmersdelight:pumpkin_soup",
+          "buyPrice": 50,
+          "sellPrice": 5
+        },
+        {
+          "id": "farmersdelight:baked_cod_stew",
+          "buyPrice": 50,
+          "sellPrice": 5
+        },
+        {
+          "id": "farmersdelight:noodle_soup",
+          "buyPrice": 50,
+          "sellPrice": 5
+        },
+        {
+          "id": "farmersdelight:bacon_and_eggs",
+          "buyPrice": 60,
+          "sellPrice": 6
+        },
+        {
+          "id": "farmersdelight:pasta_with_meatballs",
+          "buyPrice": 80,
+          "sellPrice": 7.5
+        },
+        {
+          "id": "farmersdelight:pasta_with_mutton_chop",
+          "buyPrice": 80,
+          "sellPrice": 7.5
+        },
+        {
+          "id": "farmersdelight:mushroom_rice",
+          "buyPrice": 50,
+          "sellPrice": 5
+        },
+        {
+          "id": "farmersdelight:roasted_mutton_chops",
+          "buyPrice": 60,
+          "sellPrice": 6
+        },
+        {
+          "id": "farmersdelight:vegetable_noodles",
+          "buyPrice": 60,
+          "sellPrice": 6
+        },
+        {
+          "id": "farmersdelight:steak_and_potatoes",
+          "buyPrice": 60,
+          "sellPrice": 6
+        },
+        {
+          "id": "farmersdelight:ratatouille",
+          "buyPrice": 80,
+          "sellPrice": 7.5
+        },
+        {
+          "id": "farmersdelight:squid_ink_pasta",
+          "buyPrice": 80,
+          "sellPrice": 7.5
+        },
+        {
+          "id": "farmersdelight:grilled_salmon",
+          "buyPrice": 50,
+          "sellPrice": 5
+        },
+        {
+          "id": "farmersdelight:roast_chicken_block",
+          "buyPrice": 100,
+          "sellPrice": 7.5
+        },
+        {
+          "id": "farmersdelight:stuffed_pumpkin_block",
+          "buyPrice": 100,
+          "sellPrice": 7.5
+        },
+        {
+          "id": "farmersdelight:honey_glazed_ham_block",
+          "buyPrice": 100,
+          "sellPrice": 7.5
+        },
+        {
+          "id": "farmersdelight:shepherds_pie_block",
+          "buyPrice": 100,
+          "sellPrice": 7.5
+        },
+        {
+          "id": "farmersdelight:rice_roll_medley_block",
+          "buyPrice": 100,
+          "sellPrice": 7.5
+        },
+        {
+          "id": "farmersdelight:horse_feed",
+          "buyPrice": 100,
+          "sellPrice": 7.5
+        },
+        {
+          "id": "farmersdelight:dog_food",
+          "buyPrice": 5,
+          "sellPrice": 1
+        }
+      ]
+    },
+    {
+      "name": "Gear Upgrades",
+      "representativeItem": "simplyswords:runic_tablet",
+      "items": [
+        {
+          "id": "tiered:limestone_chunk",
+          "buyPrice": 200
+        },
+        {
+          "id": "tiered:pyrite_chunk",
+          "buyPrice": 750
+        },
+        {
+          "id": "tiered:galena_chunk",
+          "buyPrice": 2000
+        },
+        {
+          "id": "simplyswords:runic_tablet",
+          "buyPrice": 750
+        },
+        {
+          "id": "prominent:encased_remnant",
+          "buyPrice": 1000
+        },
+        {
+          "id": "prominent:molten_core",
+          "buyPrice": 2500000
+        },
+        {
+          "id": "simplyswords:empowered_remnant",
+          "buyPrice": 5000
+        },
+        {
+          "id": "prominent:molten_remnant",
+          "buyPrice": 2500,
+          "sellPrice": 500
+        },
+        {
+          "id": "prominent:infused_molten_remnant",
+          "buyPrice": 5000,
+          "sellPrice": 1000
+        },
+        {
+          "id": "prominent:demon_essence",
+          "buyPrice": 5000
+        },
+        {
+          "id": "prominent:glory_essence",
+          "buyPrice": 5000
+        },
+        {
+          "id": "prominent:wrath_essence",
+          "buyPrice": 5000
+        },
+        {
+          "id": "minecraft:netherite_upgrade_smithing_template",
+          "buyPrice": 3000,
+          "sellPrice": 250
+        }
+      ]
+    },
+    {
+      "name": "Gear Sets",
+      "representativeItem": "minecraft:diamond_chestplate",
+      "items": [
+        {
+          "id": "rogues:rogue_armor_head",
+          "buyPrice": 75,
+          "sellPrice": 7.5
+        },
+        {
+          "id": "rogues:rogue_armor_chest",
+          "buyPrice": 100,
+          "sellPrice": 10
+        },
+        {
+          "id": "rogues:rogue_armor_legs",
+          "buyPrice": 100,
+          "sellPrice": 10
+        },
+        {
+          "id": "rogues:rogue_armor_feet",
+          "buyPrice": 75,
+          "sellPrice": 7.5
+        },
+        {
+          "id": "rogues:warrior_armor_head",
+          "buyPrice": 100,
+          "sellPrice": 10
+        },
+        {
+          "id": "rogues:warrior_armor_chest",
+          "buyPrice": 150,
+          "sellPrice": 15
+        },
+        {
+          "id": "rogues:warrior_armor_legs",
+          "buyPrice": 150,
+          "sellPrice": 15
+        },
+        {
+          "id": "rogues:warrior_armor_feet",
+          "buyPrice": 100,
+          "sellPrice": 10
+        },
+        {
+          "id": "rogues:diamond_dagger",
+          "buyPrice": 100
+        },
+
+
+        {
+          "id": "rogues:assassin_armor_head",
+          "buyPrice": 500,
+          "sellPrice": 50
+        },
+        {
+          "id": "rogues:assassin_armor_chest",
+          "buyPrice": 750,
+          "sellPrice": 100
+        },
+        {
+          "id": "rogues:assassin_armor_legs",
+          "buyPrice": 750,
+          "sellPrice": 100
+        },
+        {
+          "id": "rogues:assassin_armor_feet",
+          "buyPrice": 500,
+          "sellPrice": 50
+        },
+        {
+          "id": "rogues:berserker_armor_head",
+          "buyPrice": 1250,
+          "sellPrice": 200
+        },
+        {
+          "id": "rogues:berserker_armor_chest",
+          "buyPrice": 2500,
+          "sellPrice": 250
+        },
+        {
+          "id": "rogues:berserker_armor_legs",
+          "buyPrice": 2500,
+          "sellPrice": 250
+        },
+        {
+          "id": "rogues:berserker_armor_feet",
+          "buyPrice": 2000,
+          "sellPrice": 200
+        },
+        {
+          "id": "rogues:netherite_dagger",
+          "buyPrice": 4500
+        },
+
+        {
+          "id": "rogues:netherite_assassin_armor_head",
+          "buyPrice": 4500,
+          "sellPrice": 500
+        },
+        {
+          "id": "rogues:netherite_assassin_armor_chest",
+          "buyPrice": 6000,
+          "sellPrice": 500
+        },
+        {
+          "id": "rogues:netherite_assassin_armor_legs",
+          "buyPrice": 6000,
+          "sellPrice": 500
+        },
+        {
+          "id": "rogues:netherite_assassin_armor_feet",
+          "buyPrice": 4500,
+          "sellPrice": 500
+        },
+        {
+          "id": "rogues:netherite_berserker_armor_head",
+          "buyPrice": 4500,
+          "sellPrice": 500
+        },
+        {
+          "id": "rogues:netherite_berserker_armor_chest",
+          "buyPrice": 8000
+        },
+        {
+          "id": "rogues:netherite_berserker_armor_legs",
+          "buyPrice": 8000
+        },
+        {
+          "id": "rogues:netherite_berserker_armor_feet",
+          "buyPrice": 6000
+        },
+        {
+          "id": "rogues:ruby_dagger",
+          "buyPrice": 20000
+        },
+        {
+          "id": "paladins:prior_robe_head",
+          "buyPrice": 50,
+          "sellPrice": 5
+        },
+        {
+          "id": "paladins:prior_robe_chest",
+          "buyPrice": 75,
+          "sellPrice": 7.5
+        },
+        {
+          "id": "paladins:prior_robe_legs",
+          "buyPrice": 100,
+          "sellPrice": 10
+        },
+        {
+          "id": "paladins:prior_robe_feet",
+          "buyPrice": 50,
+          "sellPrice": 5
+        },
+        {
+          "id": "paladins:paladin_armor_head",
+          "buyPrice": 100,
+          "sellPrice": 10
+        },
+        {
+          "id": "paladins:paladin_armor_chest",
+          "buyPrice": 150,
+          "sellPrice": 15
+        },
+        {
+          "id": "paladins:paladin_armor_legs",
+          "buyPrice": 150,
+          "sellPrice": 15
+        },
+        {
+          "id": "paladins:paladin_armor_feet",
+          "buyPrice": 100,
           "sellPrice": 10
         }
       ]
     },
     {
-      "name": "Tools",
-      "representativeItem": "minecraft:diamond_pickaxe",
+      "name": "Bewitchment",
+      "representativeItem": "bewitchment:book_of_shadows",
       "items": [
         {
-          "id": "minecraft:diamond_pickaxe",
-          "displayName": "Diamond Pickaxe",
-          "buyPrice": 1500,
-          "sellPrice": 750
+          "id": "bewitchment:book_of_shadows",
+          "buyPrice": 1
+        },
+        {
+          "id": "bewitchment:demon_horn",
+          "buyPrice": 50
+        },
+        {
+          "id": "bewitchment:athame",
+          "buyPrice": 100
+        },
+        {
+          "id": "bewitchment:belladonna",
+          "buyPrice": 3,
+          "sellPrice": 0.5
+        },
+        {
+          "id": "bewitchment:mandrake_root",
+          "buyPrice": 5,
+          "sellPrice": 0.5
+        },
+        {
+          "id": "bewitchment:oak_bark",
+          "buyPrice": 20
+        },
+        {
+          "id": "bewitchment:spruce_bark",
+          "buyPrice": 20
+        },
+        {
+          "id": "bewitchment:birch_bark",
+          "buyPrice": 20
+        },
+        {
+          "id": "bewitchment:juniper_bark",
+          "buyPrice": 20
+        },
+        {
+          "id": "bewitchment:cypress_bark",
+          "buyPrice": 20
+        },
+        {
+          "id": "bewitchment:elder_bark",
+          "buyPrice": 50
+        },
+        {
+          "id": "bewitchment:snake_tongue",
+          "buyPrice": 5,
+          "sellPrice": 1
+        },
+        {
+          "id": "bewitchment:demon_heart",
+          "buyPrice": 75
         }
       ]
     },
     {
-      "name": "Armor",
-      "representativeItem": "minecraft:diamond_chestplate",
+      "name": "AE2",
+      "representativeItem": "ae2:charged_certus_quartz_crystal",
       "items": [
         {
-          "id": "minecraft:diamond_chestplate",
-          "displayName": "Diamond Chestplate",
+          "id": "ae2:charged_certus_quartz_crystal",
+          "buyPrice": 100
+        },
+        {
+          "id": "ae2:fluix_crystal",
+          "buyPrice": 150
+        },
+        {
+          "id": "ae2:certus_quartz_crystal",
+          "buyPrice": 50
+        },
+        {
+          "id": "ae2:silicon",
+          "buyPrice": 20
+        },
+        {
+          "id": "ae2:item_storage_cell_1k",
+          "buyPrice": 1000
+        },
+        {
+          "id": "ae2:item_storage_cell_4k",
+          "buyPrice": 4000
+        },
+        {
+          "id": "ae2:item_storage_cell_16k",
+          "buyPrice": 16000
+        },
+        {
+          "id": "ae2:item_storage_cell_64k",
+          "buyPrice": 64000
+        },
+        {
+          "id": "ae2:item_storage_cell_256k",
+          "buyPrice": 256000
+        },
+        {
+          "id": "ae2:flawless_budding_quartz",
+          "buyPrice": 5000
+        }
+      ]
+    },
+    {
+      "name": "Legendary Items",
+      "representativeItem": "prominent:empty_vessel",
+      "items": [
+        {
+          "id": "simplyswords:soulrender",
+          "buyPrice": 1000000
+        },
+        {
+          "id": "simplyswords:molten_edge",
+          "buyPrice": 500000
+        },
+        {
+          "id": "simplyswords:slumbering_lichblade",
+          "buyPrice": 1000000
+        },
+        {
+          "id": "simplyswords:twisted_blade",
+          "buyPrice": 1000000
+        },
+        {
+          "id": "simplyswords:thunderbrand",
+          "buyPrice": 1000000
+        },
+        {
+          "id": "archon:fist_of_fury",
+          "buyPrice": 200000
+        },
+        {
+          "id": "paladins:ruby_kite_shield",
+          "buyPrice": 200000
+        },
+        {
+          "id": "archers:crystal_longbow",
+          "buyPrice": 200000
+        }
+      ]
+    },
+    {
+      "name": "Boss Drops & Summons",
+      "representativeItem": "bosses_of_mass_destruction:blazing_eye",
+      "items": [
+        {
+          "id": "adventurez:gilded_blackstone_shard",
+          "buyPrice": 500
+        },
+        {
+          "id": "bosses_of_mass_destruction:blazing_eye",
           "buyPrice": 2000,
-          "sellPrice": 1000
+          "sellPrice": 500
+        },
+        {
+          "id": "deeperdarker:heart_of_the_deep",
+          "buyPrice": 2500,
+          "sellPrice": 750
+        },
+        {
+          "id": "adventurez:blackstone_golem_heart",
+          "buyPrice": 2000,
+          "sellPrice": 500
+        },
+        {
+          "id": "bosses_of_mass_destruction:obsidian_heart",
+          "buyPrice": 2000,
+          "sellPrice": 500
+        },
+        {
+          "id": "spellbladenext:prismatic",
+          "buyPrice": 2000,
+          "sellPrice": 500
+        },
+        {
+          "id": "spellbladenext:frost_blade",
+          "sellPrice": 10
+        },
+        {
+          "id": "spellbladenext:fire_blade",
+          "sellPrice": 50
+        },
+        {
+          "id": "spellbladenext:arcane_blade",
+          "sellPrice": 50
+        },
+        {
+          "id": "spellbladenext:hexbladeitem",
+          "buyPrice": 500,
+          "sellPrice": 50
+        },
+        {
+          "id": "spellbladenext:starforge",
+          "sellPrice": 1500
+        }
+      ]
+    },
+    {
+      "name": "Artifacts",
+      "representativeItem": "artifacts:mimic_spawn_egg",
+      "items": [
+        {
+          "id": "artifacts:everlasting_beef",
+          "buyPrice": 4500,
+          "sellPrice": 500
+        },
+        {
+          "id": "artifacts:eternal_steak",
+          "buyPrice": 5000,
+          "sellPrice": 500
+        },
+        {
+          "id": "artifacts:plastic_drinking_hat",
+          "buyPrice": 1000,
+          "sellPrice": 200
+        },
+        {
+          "id": "artifacts:novelty_drinking_hat",
+          "buyPrice": 1000,
+          "sellPrice": 200
+        },
+        {
+          "id": "artifacts:snorkel",
+          "buyPrice": 1000,
+          "sellPrice": 200
+        },
+        {
+          "id": "artifacts:night_vision_goggles",
+          "buyPrice": 5000,
+          "sellPrice": 500
+        },
+        {
+          "id": "artifacts:villager_hat",
+          "buyPrice": 1000,
+          "sellPrice": 200
+        },
+        {
+          "id": "artifacts:superstitious_hat",
+          "buyPrice": 2500,
+          "sellPrice": 250
+        },
+        {
+          "id": "artifacts:cowboy_hat",
+          "buyPrice": 1000,
+          "sellPrice": 200
+        },
+        {
+          "id": "artifacts:anglers_hat",
+          "buyPrice": 1000,
+          "sellPrice": 200
+        },
+        {
+          "id": "artifacts:lucky_scarf",
+          "buyPrice": 2500,
+          "sellPrice": 250
+        },
+        {
+          "id": "artifacts:scarf_of_invisibility",
+          "buyPrice": 5000,
+          "sellPrice": 500
+        },
+        {
+          "id": "artifacts:cross_necklace",
+          "buyPrice": 2500,
+          "sellPrice": 250
+        },
+        {
+          "id": "artifacts:panic_necklace",
+          "buyPrice": 1000,
+          "sellPrice": 200
+        },
+        {
+          "id": "artifacts:shock_pendant",
+          "buyPrice": 2500,
+          "sellPrice": 250
+        },
+        {
+          "id": "artifacts:flame_pendant",
+          "buyPrice": 2500,
+          "sellPrice": 250
+        },
+        {
+          "id": "artifacts:thorn_pendant",
+          "buyPrice": 2500,
+          "sellPrice": 250
+        },
+        {
+          "id": "artifacts:charm_of_sinking",
+          "buyPrice": 1000,
+          "sellPrice": 200
+        },
+        {
+          "id": "artifacts:cloud_in_a_bottle",
+          "buyPrice": 5000,
+          "sellPrice": 500
+        },
+        {
+          "id": "artifacts:obsidian_skull",
+          "buyPrice": 5000,
+          "sellPrice": 500
+        },
+        {
+          "id": "artifacts:antidote_vessel",
+          "buyPrice": 5000,
+          "sellPrice": 500
+        },
+        {
+          "id": "artifacts:universal_attractor",
+          "buyPrice": 2500,
+          "sellPrice": 250
+        },
+        {
+          "id": "artifacts:crystal_heart",
+          "buyPrice": 5000,
+          "sellPrice": 200
+        },
+        {
+          "id": "artifacts:helium_flamingo",
+          "buyPrice": 1000,
+          "sellPrice": 200
+        },
+        {
+          "id": "artifacts:chorus_totem",
+          "buyPrice": 1000,
+          "sellPrice": 200
+        },
+        {
+          "id": "artifacts:digging_claws",
+          "buyPrice": 5000,
+          "sellPrice": 500
+        },
+        {
+          "id": "artifacts:power_glove",
+          "buyPrice": 5000,
+          "sellPrice": 500
+        },
+        {
+          "id": "artifacts:fire_gauntlet",
+          "buyPrice": 5000,
+          "sellPrice": 500
+        },        {
+          "id": "artifacts:pocket_piston",
+          "buyPrice": 2500,
+          "sellPrice": 250
+        },
+        {
+          "id": "artifacts:vampiric_glove",
+          "buyPrice": 5000,
+          "sellPrice": 500
+        },
+        {
+          "id": "artifacts:golden_hook",
+          "buyPrice": 5000,
+          "sellPrice": 500
+        },
+        {
+          "id": "artifacts:onion_ring",
+          "buyPrice": 1000,
+          "sellPrice": 100
+        },
+        {
+          "id": "artifacts:pickaxe_heater",
+          "buyPrice": 5000,
+          "sellPrice": 500
+        },
+        {
+          "id": "artifacts:aqua_dashers",
+          "buyPrice": 2500,
+          "sellPrice": 250
+        },
+        {
+          "id": "artifacts:bunny_hoppers",
+          "buyPrice": 5000,
+          "sellPrice": 500
+        },
+        {
+          "id": "artifacts:kitty_slippers",
+          "buyPrice": 1000,
+          "sellPrice": 100
+        },
+        {
+          "id": "artifacts:running_shoes",
+          "buyPrice": 2500,
+          "sellPrice": 250
+        },
+        {
+          "id": "artifacts:snowshoes",
+          "buyPrice": 1000,
+          "sellPrice": 100
+        },
+        {
+          "id": "artifacts:steadfast_spikes",
+          "buyPrice": 1000,
+          "sellPrice": 100
+        },
+        {
+          "id": "artifacts:flippers",
+          "buyPrice": 2500,
+          "sellPrice": 250
+        },
+        {
+          "id": "artifacts:rooted_boots",
+          "buyPrice": 5000,
+          "sellPrice": 500
+        },
+        {
+          "id": "artifacts:whoopee_cushion",
+          "buyPrice": 5000,
+          "sellPrice": 500
+        }
+      ]
+    },
+    {
+      "name": "Create",
+      "representativeItem": "create:brass_hand",
+      "items": [
+        {
+          "id": "create:wrench",
+          "buyPrice": 75
+        },
+        {
+          "id": "create:andesite_alloy",
+          "buyPrice": 50,
+          "sellPrice": 3
+        },
+        {
+          "id": "create:polished_rose_quartz",
+          "buyPrice": 125,
+          "sellPrice": 3
+        },
+        {
+          "id": "create:blaze_cake",
+          "buyPrice": 75,
+          "sellPrice": 5
+        },
+        {
+          "id": "create:precision_mechanism",
+          "buyPrice": 2000
+        },
+        {
+          "id": "create:empty_schematic",
+          "buyPrice": 500
+        },
+        {
+          "id": "create:schematic_and_quill",
+          "buyPrice": 500
+        },
+        {
+          "id": "create:super_glue",
+          "buyPrice": 750
+        },
+        {
+          "id": "create:railway_casing",
+          "buyPrice": 1500
+        },
+        {
+          "id": "create:controls",
+          "buyPrice": 1500
+        },
+        {
+          "id": "create:train_door",
+          "buyPrice": 1500
+        },
+        {
+          "id": "create:white_seat",
+          "buyPrice": 250
         }
       ]
     }

@@ -25,16 +25,6 @@ public class serverside implements ModInitializer {
         // Initialize the balance manager
         balanceManager.init();
 
-        // Initialize playtime manager (if enabled)
-        if (ConfigManager.enablePlaytimeRewards) {
-            PlaytimeManager.init();
-        }
-
-        // Initialize mob kill manager (if enabled)
-        if (ConfigManager.enableKillRewards) {
-            MobKillManager.init();
-        }
-
         if (ConfigManager.enableGUIShop) {
             // Initialize GUI Shop
             ShopConfigManager.init();
