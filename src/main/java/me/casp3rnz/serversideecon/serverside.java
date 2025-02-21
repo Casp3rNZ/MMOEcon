@@ -22,6 +22,11 @@ public class serverside implements ModInitializer {
         // Load the configuration values
         ConfigManager.loadConfig();
 
+        // Init chestshhop listener and config
+        ChestShopListener.loadConfig();
+        ChestShopListener.register();
+        ChestShopTransactionHandler.register();
+
         // Initialize the balance manager
         balanceManager.init();
 
